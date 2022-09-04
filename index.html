@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+
+
+<html>
+
+<head>
+  <!-- anything providing more info. about the webpage
+        also, anything written inside head tag won't be displayed on
+      browser -->
+
+  <!-- Most imp. thing we do in head tag is we connect our css and js files with this html file
+  in this section -->
+  <!-- We provide more info. of our website. 
+  This info will be used by search engines like google search for indexing purpose -->
+
+  <title>My Tab</title>
+  <meta name="author" content="Sharad trikha">
+  <meta name="description" content="This is a website to teach html">
+  <meta charset="UTF-8">
+  <!-- Character encoding : a -> 97 -> 0101111010 -> ASCII 
+  UTF8 (parent) -> ASCII(child) -->
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+  <!-- Task :
+  I want to connect some css files with this html file -->
+  <!-- <link rel="stylesheet" href="style.css" /> -->
+
+  <!-- Task :
+  I want to connect some Javascript files with this html file  -->
+  <!-- <script src="random.js">
+  </script> -->
+
+  <!-- <style>
+    body {
+      background-color: red;
+    }
+  </style> -->
+
+</head>
+
+<body>
+  <!-- anything that we want to display on the browser -->
+  <h1>My name is Sharad</h1>
+
+  <!-- Task :
+    My task is to show my company name where i work and if you click on that text, 
+    I will redirect/take you to my company's website -->
+  <p>My company name is Walmart.
+    <a href="https://www.walmart.com" target="_blank">Click here to redirect to walmart</a>
+  </p>
+
+
+  <hr />
+
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis suscipit, commodi magnam minus optio, magni
+    minima ipsum nisi qui ullam nostrum illum inventore dolores amet necessitatibus fugiat ea eaque et!
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad maiores voluptates, maxime fugit qui nemo a animi illum
+    minus error in. Molestias, repudiandae fugiat provident voluptatibus repellendus eius sequi veniam!
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium quod eius quas, quos fugiat aliquam blanditiis
+    ut temporibus possimus, minima perferendis reprehenderit iure eligendi nam minus laborum! Porro, id asperiores.
+  </p>
+
+  <!-- Task :
+  Draw a horizontal line after above paragraph.
+  Semantics! -> I want to draw a line to depict separation amongst my content -->
+
+  <hr>
+
+  <!-- List :
+
+  1. Sharad
+  2. Akshay
+  3. Rahul
+  4. Aditya -->
+
+  <h2>Names of the students : </h2>
+
+  <!-- whenever you want numbered list, then, We will use Ordered List 
+  Tag - ol -->
+  <ol>
+    <li>Sharad</li>
+    <li>Akshay</li>
+    <li>Rahul</li>
+    <li>Aditya</li>
+  </ol>
+
+  <hr>
+
+  <!-- I want a list but it should not be numbered, i need only bullet point list
+  Tag - ul  -->
+
+  <ul>
+    <li>Sharad</li>
+    <li>Akshay</li>
+    <li>Rahul</li>
+    <li>Aditya</li>
+  </ul>
+
+  <hr>
+
+  <!-- description List -->
+  <!-- Tag -> dl -->
+
+  <!-- Child tags - dt, dd -->
+  <dl>
+    <dt>Sharad</dt>
+    <dd>Instructor at newton</dd>
+
+    <dt>Aditya</dt>
+    <dd>Student at newton</dd>
+  </dl>
+
+
+  <div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam corrupti impedit accusantium distinctio
+      consequatur, ipsam ad voluptatum natus esse exercitationem aspernatur, autem iusto doloribus at praesentium
+      pariatur
+      beatae laborum reprehenderit <span>sharad trikha.</span></p>
+    <p>Newton Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel nisi quaerat facilis, perspiciatis dolorum,
+      consequuntur alias accusantium dicta animi repudiandae molestiae inventore, sed tempora iusto consequatur mollitia
+      doloremque dolor distinctio?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic consequuntur accusamus tenetur eum dolores,
+      voluptates
+      laudantium iusto porro eligendi nemo omnis et. Aliquid, doloremque est. Saepe laboriosam pariatur voluptas
+      debitis.
+    </p>
+  </div>
+
+  <audio controls loop autoplay>
+    <source src="dummyAudio.mp3" type="audio/mpeg" />
+    <source src="dummyOOG.ogg" type="audio/ogg" />
+    Audio is not supported
+  </audio>
+
+  <video controls width="480px" height="auto" loop autoplay>
+    <source src="videoSample.mp4" type="video/mp4" />
+    <!-- more than one sources  -->
+    Video is not supported
+  </video>
+
+  <!-- MEDIA Category tags -- img, audio, video -->
+  <img src="dummyImage.jpg" alt="Food" width="300px" height="auto" />
+
+
+  <!-- Div -- (BLOCK LEVEL CONTAINER)
+  Findings :
+
+  1. Block display type
+  2. It acts as an container to group multiple childrens together.
+
+   -->
+
+
+
+  <!-- P tag :
+  Findings :
+
+  1. It takes full available width.
+  2. It always starts from a newline.
+
+  Anchor (a) tag :
+  Findings :
+
+  1. It takes only that much space which is required for its content.
+  2. It starts on the same line.
+
+  Every html element have some default display property.
+  Broadly, it is of 2 types :
+
+  1. Block :
+  i. It takes full available width.
+  ii. It always starts from a newline.
+  eg - p, div,h1,h2,h3,h4,h5,h6
+
+
+  2. Inline
+  i. It takes only that much space which is required for its content.
+  ii. It starts on the same line.
+  eg - anchor (a), span -->
+
+  <!-- <h2>This is heading h2</h2>
+    <h3>This is heading h3</h3>
+    <h4>This is heading h4</h4>
+    <h5>This is heading h5</h5>
+    <h6>This is heading h6</h6> -->
+
+  <!-- <p>
+      <h1>Heading under p tag</h1>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ducimus
+      explicabo cupiditate expedita ipsa in earum, tempora at corporis quo.
+      Debitis fugit nesciunt facere dolore neque assumenda unde atque minima.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias minima
+      officiis aperiam blanditiis ipsa laboriosam enim, nam perferendis magnam.
+      Similique reiciendis deleniti consequatur vero, assumenda quia ipsa nisi
+      voluptas optio. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+      Perspiciatis voluptas eligendi molestias laborum dignissimos? Quis
+      consectetur voluptatem, illo quia nihil cumque maiores rerum unde quae, in
+      ipsam cum laboriosam rem?
+    </p> -->
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+How flipkart.com works ?
+We talked on 2 characters - client and server
+Client - browser (google chrome)
+Server - is the person who is serving requests for client
+
+
+what Kind of things client needs ?
+Html, css and js files
+
+How can fulfil these requests ?
+SERVER 
+
+--------------------------------------
+HOW INTERNET WORKS !!!!!!!!!!!
+
+Client and Server
+
+How client and server interact with each other ?
+
+How do machines/laptops/pcs can be identified ? (unique identifier)
+IP ADDRESS (each machine has its own unique ip address)
+
+In order to talk to any machine ?
+I need to know its ip address
+
+
+flipkart.com ->  DNS (domain name system) -> 195.545.3.2 
+
+Introduce 2 more characters :
+
+1. TCP
+2. HTTP
+
+In order to connect client and server :
+we make TCP (Transmission control protocol) - 3 way handshake connection between them (Computer Networking)
+
+Assume these 2 entities connected over TCP.
+Now, they will start REQUEST-RESPONSE cycle.
+
+In order for REQUEST-RESPONSE cycle to happen -> we need Protocol ->
+We use HTTP protocol
+------------------------------------------
+
+Frontend :
+Browser is our whole world.
+Browser understands 3 things - html, css, js.
+
+HTML - Hypertext markup lang. 
+role : provides skeleton strcture
+
+
+css - Cascading stylesheet
+Role : 
+To style/beautification of our html page.
+Helps in Layout
+
+Javascript -
+programming lang.
+
+
+--------------------------------------------
+
+HTML - Hypertext markup lang. 
+
+
+Letter writing ----
+
+
+
+HEADING
+
+
+<TAGNAME> Content </TAGNAME> ----> HTML ELEMENT (Vocab.)
+
+HTML :
+
+1. Tags
+syntax: <TAGNAME> </TAGNAME>
+
+2. Attributes - provide more info about its tag or even
+change behaviour of its tag
+
+syntax: <TAGNAME ATTRIBUTE_NAME="ATTRIBUTE_VALUE"> </TAGNAME>
+
+
+3. Self closing tags/void tags :
+
+example : hr tag, br tag, img tag.
+
+<TAG> OR <TAG />
+
+<Tag />

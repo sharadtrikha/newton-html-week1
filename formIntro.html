@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Title</title>
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <form action="dummyServer.html">
+            <!-- Text field-->
+            <div>
+                <label for="name">Enter Name : </label>
+                <input type="text" id="name" name="name" />
+            </div>
+
+            <div>
+                <label for="password">Enter password : </label>
+                <input type="password" id="password" name="password" />
+            </div>
+
+
+            <div>
+                <!-- Radio field - primary req. : 
+                    name of both input tags should be same for radio button -->
+                <label>Gender : </label>
+                <input type="radio" id="malegender" name="gender" value="male" />
+                <label for="malegender">Male</label>
+
+                <input type="radio" id="femalegender" name="gender" value="female" />
+                <label for="femalegender">Female</label>
+            </div>
+
+            <div>
+                <label>Courses Enrolled : </label>
+
+                <input type="checkbox" id="dsa" name="dsa" />
+                <label for="dsa">DSA</label>
+
+                <input type="checkbox" id="mern" name="mern" />
+                <label for="mern">MERN Stack</label>
+
+            </div>
+
+            <div>
+                <label>Submission date : </label>
+                <input type="date" name="submission" id="submission" />
+            </div>
+
+            <div>
+                <label>Submission date : (with Time)</label>
+                <input type="datetime-local" name="datetime" id="datetime" />
+            </div>
+
+            <div>
+                <label>Submission date : (only month)</label>
+                <input type="month" name="month" id="month" />
+            </div>
+
+            <div>
+                <label for="email">Enter email : </label>
+                <input type="email" name="email" id="email" />
+            </div>
+
+            <div>
+                <label>Select color : </label>
+                <input type="color" name="colorSelection" value="colorSelection" />
+            </div>
+
+            <div>
+                <label>Select range : </label>
+                <input type="range" name="rangeSelector" />
+            </div>
+
+            <div>
+                <label>Select Number : </label>
+                <input type="number" name="numberSelector" />
+            </div>
+
+            <div>
+                <label>File upload : </label>
+                <input type="file" name="fileUploader" />
+            </div>
+
+            <div>
+                <input type="hidden" name="impData" value="impValue" />
+            </div>
+
+            <div>
+                <label>Mobile no. :</label>
+                <input type="tel" name="telephone" id="telephone" />
+            </div>
+
+            <div>
+                <input type="submit" />
+                <input type="reset" />
+                <input type="button" value="I'm a button" />
+                <input type="image" src="dummyImage.jpg" alt="dummyImage" width="20px" />
+            </div>
+
+        </form>
+    </main>
+    <footer></footer>
+
+</body>
+
+</html>
