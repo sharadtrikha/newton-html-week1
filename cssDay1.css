@@ -1,0 +1,45 @@
+/* p.bgColor {
+    background-color: yellow;
+}
+
+#divider {
+    border-bottom: 1px solid;
+    padding-bottom: 20px;
+}
+*/
+/* div {
+    color: green;
+}
+
+p {
+    color: green;
+}
+
+span {
+    color: green
+} */
+
+/* div,
+p,
+span {
+    color: green;
+} */
+
+/* * {
+    background-color: red;
+    color: yellowgreen;
+} */
+
+/* .class1 {
+    background-color: red;
+}
+
+.class2 {
+    background-color: blue;
+} */
+
+div p {
+    background-color: yellow;
+}
+
+/* All p tags under div tag should be colored yellow */

@@ -10,16 +10,45 @@
 <body>
     <header></header>
     <main>
+
+        <!-- <form>
+            <fieldset>
+                <legend>Login !</legend>
+
+                <div>
+                    <label for="name">Username</label>
+                    <input type="text" name="name" id="name" />
+                </div>
+
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" />
+                </div>
+
+                <input type="submit" value="Login" />
+            </fieldset>
+        </form>
+
+        <hr /> -->
+
+
+
+
+
+
+
         <form action="dummyServer.html">
             <!-- Text field-->
             <div>
+
                 <label for="name">Enter Name : </label>
-                <input type="text" id="name" name="name" />
+                <input type="text" id="name" name="name" placeholder="Only First name" autofocus maxlength="40"
+                    required />
             </div>
 
             <div>
                 <label for="password">Enter password : </label>
-                <input type="password" id="password" name="password" />
+                <input type="password" id="password" name="password" placeholder="Password pattern : [0-8]{5}" />
             </div>
 
 
@@ -27,7 +56,7 @@
                 <!-- Radio field - primary req. : 
                     name of both input tags should be same for radio button -->
                 <label>Gender : </label>
-                <input type="radio" id="malegender" name="gender" value="male" />
+                <input type="radio" id="malegender" name="gender" value="male" checked />
                 <label for="malegender">Male</label>
 
                 <input type="radio" id="femalegender" name="gender" value="female" />
@@ -37,52 +66,52 @@
             <div>
                 <label>Courses Enrolled : </label>
 
-                <input type="checkbox" id="dsa" name="dsa" />
+                <input type="checkbox" id="dsa" name="dsa" checked />
                 <label for="dsa">DSA</label>
 
-                <input type="checkbox" id="mern" name="mern" />
+                <input type="checkbox" id="mern" name="mern" checked />
                 <label for="mern">MERN Stack</label>
 
             </div>
 
             <div>
                 <label>Submission date : </label>
-                <input type="date" name="submission" id="submission" />
+                <input type="date" name="submission" id="submission" value="2022-09-05" />
             </div>
 
-            <div>
+            <!-- <div>
                 <label>Submission date : (with Time)</label>
                 <input type="datetime-local" name="datetime" id="datetime" />
-            </div>
+            </div> -->
 
             <div>
                 <label>Submission date : (only month)</label>
-                <input type="month" name="month" id="month" />
+                <input type="month" name="month" id="month" value="2022-01" />
             </div>
 
             <div>
                 <label for="email">Enter email : </label>
-                <input type="email" name="email" id="email" />
+                <input type="email" name="email" id="email" value="sharadtrikha@gmail.com" readonly />
             </div>
-
+            <!-- 
             <div>
                 <label>Select color : </label>
                 <input type="color" name="colorSelection" value="colorSelection" />
-            </div>
+            </div> -->
 
             <div>
                 <label>Select range : </label>
-                <input type="range" name="rangeSelector" />
+                <input type="range" name="rangeSelector" value="150" min="100" max="200" step="5" />
             </div>
 
             <div>
                 <label>Select Number : </label>
-                <input type="number" name="numberSelector" />
+                <input type="number" name="numberSelector" value="30" />
             </div>
 
             <div>
                 <label>File upload : </label>
-                <input type="file" name="fileUploader" />
+                <input type="file" name="fileUploader" multiple />
             </div>
 
             <div>
@@ -91,7 +120,29 @@
 
             <div>
                 <label>Mobile no. :</label>
-                <input type="tel" name="telephone" id="telephone" />
+                <input type="tel" name="telephone" id="telephone" pattern="[0-9]{10}" />
+            </div>
+
+            <!-- select tag - Dropdowns! select tag - first option is bydefault selected -->
+            <div>
+                <label for="lang">Select language : </label>
+                <select id="lang" name="lang">
+
+                    <optgroup label="Frontend">
+                        <option>Javascript</option>
+                        <option>Html</option>
+                        <option>CSS</option>
+                    </optgroup>
+                    <optgroup label="Backend">
+                        <option>Java</option>
+                        <option>Python</option>
+                    </optgroup>
+                </select>
+            </div>
+
+            <div>
+                <label for="address">Address : </label>
+                <textarea id="address" name="address"></textarea>
             </div>
 
             <div>
@@ -99,6 +150,10 @@
                 <input type="reset" />
                 <input type="button" value="I'm a button" />
                 <input type="image" src="dummyImage.jpg" alt="dummyImage" width="20px" />
+
+                <button type="button">
+                    I'm a button
+                </button>
             </div>
 
         </form>
@@ -108,3 +163,34 @@
 </body>
 
 </html>
+
+
+<!-- Task :
+
+Input field should have DEFAULT value and user should not be able to
+change the default value.
+Value should appear inside form only for read only purpose.
+
+
+/dummyServer.html?name=Sharad&password=&gender=male&dsa=on&mern=on&submission=2022-09-05&month=2022-01&email=sharadtrikha%40gmail.com&rangeSelector=20&numberSelector=30&fileUploader=&impData=impValue&telephone=38728440834
+
+
+/dummyServer.html?password=&gender=male&dsa=on&mern=on&submission=2022-09-05&month=2022-01&email=sharadtrikha%40gmail.com&rangeSelector=20&numberSelector=30&fileUploader=&impData=impValue&telephone=38728440834
+
+
+Readonly vs disabled ->
+
+Readonly - will be used in scenarios where we want to show more information
+to the user and we do not want user to change that info.
+
+Disabled - it will be primarily used where there is a CONDITION involved!
+i.e. Enable or disable any input field based on some ACTION
+eg - Keep the field disabled till the time user does not enter userid -->
+
+
+
+Log in form!
+
+Login field
+Password field
+Submit button

@@ -1,0 +1,133 @@
+
+
+
+
+HTML -> is for creating base structure (How ? with the help of HTML TAGS/Elements)
+
+CSS -> 
+(Cascading StyleSheet)
+
+Usecase ->
+
+1. To style these HTML TAGS
+2. To provide or to change/alter Layout
+
+Implementation ?
+How to use CSS ?
+
+There are 3 ways :
+1. Inline - CSS_PROPERTY_NAME: VALUE;
+2. Internal - SELECTOR {
+                CSS_PROPERTY_NAME: VALUE
+              }
+
+SELECTOR ?
+CSS wants to know on which HTML Tag you want to apply css on ?
+eg - div, span, h1, img, section, article ????
+
+Apart from that, SELECTOR can be any id or class value also.
+
+
+    <style>
+        h1 {
+            background-color: red;
+            color: green;
+        }
+    </style>
+
+3. External
+
+        h1 {
+            background-color: red;
+            color: green;
+        }
+
+        <link rel="stylesheet" href="cssDay1.css" />
+
+CSS Syntax :
+
+SELECTOR {
+    CSS_PROPERTY_NAME: VALUE
+}
+
+
+-----
+
+h1 -
+
+Red color - inline
+aqua color - internal
+blue color - external
+
+
+
+What will be the final color on browser ?
+
+Priority :
+
+INLINE > 
+
+----------------------
+
+aqua color - internal
+blue color - external
+
+Can i say ? 
+INTERNAL > EXTERNAL ? NO 
+
+Conclusion w.r.t Precedence :
+
+INLINE > INTERNAL OR EXTERNAL (Based on their position inside Head tag)
+
+
+-----------------------------------------------
+
+During our html lectures : 
+we used to talk on 2 html attributes :
+id (indicates UNIQUENESS), class 
+
+
+Only 2nd paragraph to be colored as yellow ?
+
+
+
+----------------------------------------------
+
+Selectors :
+
+Basics :
+
+
+1. ELEMENT Selector :
+
+p {} 
+div {}
+
+2. ID Selector :
+
+#ID_NAME {}
+
+3. CLASS Selector :
+
+.CLASS_NAME {}
+
+4. CLASS Selector with ELEMENT :
+
+<ELEMENT_NAME><CLASS_NAME>
+
+eg : p.bgColor -> apply css ONLY to those p tags which are having bgColor class
+
+5. Global Selector :
+    Symbol - *
+
+
+Combinators Selectors :
+
+Combination of more than one selector.
+
+1. Descendent selector
+
+<SELECTOR1><SPACE><SELECTOR2> {
+
+}
+-> ALL SELECTOR2 (all childrens/grandchildrens) under SELECTOR1 (parent) should be selected

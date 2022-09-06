@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <form oninput="res.value=parseInt(range.value) + parseInt(num.value)">
+            <input type="range" id="range" name="range" value="20" />
+            +
+            <input type="number" id="num" name="num" value="40" />
+            =
+            <output name="res" for="range num">60</output>
+        </form>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
