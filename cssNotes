@@ -191,3 +191,33 @@ Anchor tag has its own multiple states :
 4. active
 
 --> Order of applying these pseudo classes is important
+
+
+Forms :
+
+
+Pseudo Class :
+
+1. :focus
+2. :required
+3. :valid
+4. :invalid
+5. :disabled
+5. :checked (not working - border css property)
+6. :read-only
+7. :read-write
+8. :enabled
+9. :optional
+
+--------------------------------------------------------
+
+
+Attribute selector
+syntax : [attribute]
+
+Variants :
+
+1. SELECTOR[ATTRIBUTE_NAME]
+2. SELECTOR[ATTRIBUTE_NAME=VALUE]
+3. SELECTOR[ATTRIBUTE_NAME^=VALUE] --> used when something starts with
+4. SELECTOR[ATTRIBUTE_NAME$=VALUE]--> used when something ends with

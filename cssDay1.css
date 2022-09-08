@@ -38,12 +38,7 @@ span {
     background-color: blue;
 } */
 
-.sharad {
-    background-color: red;
-    font-size: 24px;
-}
-
-::marker {
+/* ::marker {
     color: aquamarine;
 }
 
@@ -65,7 +60,7 @@ p::selection {
 
 a:link {
     background-color: red;
-}
+} */
 
 a:hover {
     background-color: bisque;
@@ -77,4 +72,77 @@ a:active {
 
 #demo:target {
     background-color: blue;
+}
+
+/* input:required {
+    background-color: red;
+} */
+
+/* input:invalid {
+    border: 5px solid red;
+}
+
+input:valid {
+    border: 5px solid green;
+}
+
+input:read-only {
+    border: 5px solid orchid;
+}
+
+input:read-write {
+    border: 5px solid rgb(190, 199, 174);
+}
+
+input:focus {
+    border: 5px solid black;
+}
+
+input:disabled {
+    background-color: blueviolet;
+}
+
+input:read-write {
+    background-color: chocolate;
+}
+
+input:checked {
+    height: 50px;
+    outline: 5px solid brown;
+}
+
+input:enabled {
+    background-color: black;
+} */
+/* 
+input:optional {
+    background-color: brown;
+} */
+
+/* a[href] {
+    background-color: red;
+} */
+
+/* a[target] {
+    background-color: red;
+} */
+
+/* a[title="Dummy1"] {
+    background-color: red;
+} */
+/* 
+a[href^="https"] {
+    background-color: red;
+} */
+
+/* a[href$="in"] {
+    background-color: red;
+} */
+
+/* a[href*="google"] {
+    background-color: red;
+} */
+
+a[title~="Dummy"] {
+    background-color: aqua;
 }
