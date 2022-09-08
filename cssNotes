@@ -125,9 +125,69 @@ Combinators Selectors :
 
 Combination of more than one selector.
 
-1. Descendent selector
+1. Descendent selector (space)
 
-<SELECTOR1><SPACE><SELECTOR2> {
+<SELECTOR1><SPACE><SELECTOR2>...............<SPACE><SELECTOR N> {
 
 }
 -> ALL SELECTOR2 (all childrens/grandchildrens) under SELECTOR1 (parent) should be selected
+
+2. Child Selector (>) :
+
+syntax : <SELECTOR1> > <SELECTOR2> .......
+
+-> Select only direct children (SELECTOR2) of parent (SELECTOR1)
+
+3. General Sibling (~):
+
+syntax : <SELECTOR1>~<SELECTOR2> ....
+
+
+4. Adjacent Sibling (+) :
+
+syntax : <SELECTOR1>+<SELECTOR2> .....
+
+
+----------------------------------------------------
+
+Pseudo elements :
+
+syntax: <SELECTOR>::<PSEUDO_ELEMENT>
+
+-> to style any html tag before/after.
+-> to style first letter, first sentence.
+syntax :
+
+<SELECTOR>::<PSEUDO_ELEMENT>
+
+Task :
+BgColor only first word/letter of paragraph tag ?
+
+1. first-letter
+2. first-line 
+3. marker
+4. before
+5. after
+6. selection
+
+
+-------------------------------------------------------
+
+Pseudo Classes :
+
+Syntax : <SELECTOR>:<NAME_OF_PSEUDO_CLASS>
+
+--> is used to define STATE of HTML elements. eg - hover, click, focus, etc
+
+
+Example :
+
+Anchor tag (a).
+Anchor tag has its own multiple states :
+
+1. link
+2. visited
+3. hover
+4. active
+
+--> Order of applying these pseudo classes is important

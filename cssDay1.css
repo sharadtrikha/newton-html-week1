@@ -38,8 +38,43 @@ span {
     background-color: blue;
 } */
 
-div p {
-    background-color: yellow;
+.sharad {
+    background-color: red;
+    font-size: 24px;
 }
 
-/* All p tags under div tag should be colored yellow */
+::marker {
+    color: aquamarine;
+}
+
+p::before {
+    content: "APPENDING BEFORE";
+    font-size: 24px;
+    color: red;
+}
+
+p::after {
+    content: " -- APPENDING AFTER";
+    font-size: 24px;
+    color: green;
+}
+
+p::selection {
+    background-color: orange;
+}
+
+a:link {
+    background-color: red;
+}
+
+a:hover {
+    background-color: bisque;
+}
+
+a:active {
+    background-color: cyan;
+}
+
+#demo:target {
+    background-color: blue;
+}
