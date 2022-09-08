@@ -115,6 +115,13 @@ div {}
 
 <ELEMENT_NAME><CLASS_NAME>
 
+5. ID Selector with ELEMENT :
+
+<ELEMENT_NAME><ID_NAME>
+
+
+
+
 eg : p.bgColor -> apply css ONLY to those p tags which are having bgColor class
 
 5. Global Selector :
@@ -130,6 +137,9 @@ Combination of more than one selector.
 <SELECTOR1><SPACE><SELECTOR2>...............<SPACE><SELECTOR N> {
 
 }
+
+
+
 -> ALL SELECTOR2 (all childrens/grandchildrens) under SELECTOR1 (parent) should be selected
 
 2. Child Selector (>) :
@@ -138,15 +148,15 @@ syntax : <SELECTOR1> > <SELECTOR2> .......
 
 -> Select only direct children (SELECTOR2) of parent (SELECTOR1)
 
+
+
 3. General Sibling (~):
 
 syntax : <SELECTOR1>~<SELECTOR2> ....
 
-
 4. Adjacent Sibling (+) :
 
 syntax : <SELECTOR1>+<SELECTOR2> .....
-
 
 ----------------------------------------------------
 
@@ -221,3 +231,8 @@ Variants :
 2. SELECTOR[ATTRIBUTE_NAME=VALUE]
 3. SELECTOR[ATTRIBUTE_NAME^=VALUE] --> used when something starts with
 4. SELECTOR[ATTRIBUTE_NAME$=VALUE]--> used when something ends with
+5. SELECTOR[ATTRIBUTE_NAME*=VALUE] --> used for substrings
+
+6. SELECTOR[ATTRIBUTE_NAME~=VALUE] -> use for Search EXACT VALUE AND SPACE SEPARATED VALUE 
+7. SELECTOR[ATTRIBUTE_NAME|=VALUE] -> use For Search EXACT VALUE AND - SEPARATED
+VALUE
