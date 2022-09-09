@@ -236,3 +236,138 @@ Variants :
 6. SELECTOR[ATTRIBUTE_NAME~=VALUE] -> use for Search EXACT VALUE AND SPACE SEPARATED VALUE 
 7. SELECTOR[ATTRIBUTE_NAME|=VALUE] -> use For Search EXACT VALUE AND - SEPARATED
 VALUE
+
+
+--------------------------------------------
+
+Pseudo Classes :
+
+(can be applied to any html element):
+
+1. :first-child
+2. :last-child
+3. :first-of-type
+4. :last-of-type
+5. :nth-child() -> it takes number as input, also it takes values like 
+    "even/odd" and it also takes formula -> 
+    AN+B
+
+    where A -> step size
+        N -> number...starts from 0,1,2
+        B -> offset
+
+Remember -> N starts from 0 but UI counting starts from 1.
+
+6. :nth-last-child() -> it takes number as input, also it takes values like 
+    "even/odd" and it also takes formula -> 
+    AN+B
+
+    where A -> step size
+        N -> number...starts from 0,1,2
+        B -> offset
+
+7. :nth-of-type() ->
+
+    Combination of of-type (means it looks for the exact mentioned child irrespective of its position inside parent. Only thing matters here is
+    its own Order) kind of behaviour + nth kind of behavour (numbers, 
+    even/odd, AN+B formula)
+
+8. :nth-last-of-type ->
+     Combination of of-type (means it looks for the exact mentioned child irrespective of its position inside parent. Only thing matters here is
+    its own Order) kind of behaviour + nth-last kind of behavour (numbers, 
+    even/odd, AN+B formula)
+
+
+-------------------------------------
+
+Specificity :
+
+Each element have its own specificity.
+
+INLINE CSS - 1000
+ID - 100 (Specificity value)
+CLASS, PSEUDO-CLASS, ATTRIBUTE SELECTORS - 10
+ELEMENT, PSEUDO-ELEMENTS - 1
+
+eg :
+
+#dummy div.random:focus {}
+
+CALCULATE Specificity = 100 + 1 + 10 + 10 = 121
+
+
+Code is read from top to bottom. Also, there is a priority.
+INLINE CSS > INTERNAL OR EXTERNAL Depends on where it is written
+
+----------------------------------------
+
+COLORS 
+
+1. rgb
+2. rgba
+3. HEX code
+4. hsl
+5. hsla
+
+color: red;
+
+How many ways in which we can represent red ?
+
+1. rgb ->
+(RED GREEN BLUE)
+
+rgb(RED,GREEN,BLUE)
+Range -> 0-255
+
+2. rgba ->
+
+extension of rgb only.
+a -> alpha
+
+rgb(RED,GREEN,BLUE,ALPHA)
+
+ALPHA -> Opacity
+Value ranges from -> 0 to 1.
+
+
+3. HEX code :
+
+color : #RRGGBB;
+
+R,G,B -> 0,1,2,3,4,5,6,7,8,9,a,b,c,d,e,f
+
+color: #00FF00
+
+ShortCut/Shorthand :
+
+color : #RGB;
+
+color: #0F0
+
+4. hsl :
+
+H -> Hue
+S -> Saturation
+L -> light
+
+Hue -> represent color -> RGB
+0-360
+
+0,360 -> Red
+120 -> Green
+240 -> Blue 
+
+Saturation -> 
+Degree of greyness.
+Percentage - 0-100%
+
+Light ->
+Intensity
+-> degree of white/black
+Percentage - 0-100%
+
+5. hsla :
+
+Extn of hsl
+A -> Alpha
+opacity

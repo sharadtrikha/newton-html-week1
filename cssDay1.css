@@ -143,6 +143,41 @@ a[href^="https"] {
     background-color: red;
 } */
 
-a[title~="Dummy"] {
+/* a[title~="Dummy"] {
     background-color: aqua;
+}
+
+div p:nth-last-of-type() {
+    background-color: red; */
+/* } */
+
+/* AN + B ->
+
+A - 2
+N - N (browser fills this - 0,1,2,3,4....)
+B - 0 */
+
+/* 2,4,6,8 -> got colored
+
+AN+B ->
+
+2N ->
+
+0,2,4,6,8...
+
+-----------------------
+
+2n+1
+
+-> 
+n -> 0,1,2,3,4,5,6,,....
+
+Final -> 1,3,5,7 */
+
+/* 2N+3 
+
+3,5,7 */
+
+#dummyPara {
+    background-color: hsl(0, 100%, 50%);
 }
