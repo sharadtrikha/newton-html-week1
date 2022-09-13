@@ -499,3 +499,4 @@ Default/Standard Font size : 16px
 1rem -> 16px
 1.2rem -> 1.2 * 16px -> 
 1.5rem -> 1.5 * 16px -> 24px
+1.5rem -> 1.5 * 24px (browser default) -> 
