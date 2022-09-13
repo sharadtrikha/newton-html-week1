@@ -371,3 +371,131 @@ Percentage - 0-100%
 Extn of hsl
 A -> Alpha
 opacity
+
+
+---------------------------------------
+
+Background images :
+
+1. background-image : url()
+2. backgroun-repeat: 
+3. background-size: cover, contain, auto(default), single value -> it takes width as input and assumes height as "auto"
+
+
+
+-----------------------------------------
+
+Box-Model :
+it says everything is a box (reactangle) in HTML.
+BOX -> CONTENT + PADDING + BORDER + MARGIN 
+
+Content -> actual content 
+Padding -> Distance between content n border
+Border -> actual border
+Margin -> Distance between 2 elements
+
+
+padding, margin :
+
+Syntax :
+
+padding : 10px or margin : 10px
+
+-> means apply padding/margin on top, right, bottom, left -> 10px
+
+Individual ?
+What if i want to apply on top only ?
+padding-top: 10px;
+
+Left -> padding-left: 10px
+bottom -> padding-bottom: 10px
+Right -> padding-right: 10px.....
+
+
+What to apply margin or padding in all 4 directions but different values ?
+
+TOP - 20px
+Right - 10px
+bottom - 30px
+left - 25px
+
+Shorthand property :
+padding: 20px 10px 30px 25px; (clockwise TOP -> right -> bottom -> left)
+
+------------------------
+
+What to apply same values in top and bottom but different in left 
+and right ?
+
+Top - 20px
+Bottom - 20px
+left - 15px
+right - 15px
+
+padding: 20px 15px 20px 15px;
+OR 
+padding: T/B L/R;
+padding: 20px 15px;
+
+Margin Collapse ?
+It happens only in vertical sceanrio.
+Whichever value is greatest..that will be taken
+
+Margin-bottom: 50px
+Margin-top: 30px
+
+
+Note :
+
+Inline elements - margin-top, margin-bottom doesn't work
+-------------------------
+
+
+Calculation :
+
+2 div with id - one n two :
+
+div#one :
+How much is the width ?
+width -> 500 ?
+
+
+div#two :
+How much is the width ?
+width -> ? 520, 500, 540, 200, 540+
+
+WIDTH = CONTENT + PADDING-LEFT + PADDING-RIGHT + BORDER-LEFT    + BORDER-RIGHT 
+
+WIDTH -> 500px 
+ACTUAL WIDTH -> 542px
+
+MY WISH ?
+is width -> 500px then it should always be 500!
+
+How to make it possible ?
+If we can consider PADDING-LEFT + PADDING-RIGHT + BORDER-LEFT    + BORDER-RIGHT -> inside width only ? -> then it's possible
+
+--------------------------------------
+box-sizing :
+helps/alter to calc. width/height of HTML ELEMENTs.
+
+1. content-box (default)
+2. border-box
+
+----------------------------------------
+
+CSS UNITS :
+
+1. px - pixel - FIXED UNIT (Not recommended/last resort)
+2. em
+3. rem
+4. %
+5. vw
+6. vh
+7. ch
+
+Default/Standard Font size : 16px
+
+1rem -> 16px
+1.2rem -> 1.2 * 16px -> 
+1.5rem -> 1.5 * 16px -> 24px

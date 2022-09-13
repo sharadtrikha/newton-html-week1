@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 /* p.bgColor {
     background-color: yellow;
 }
@@ -177,7 +181,41 @@ Final -> 1,3,5,7 */
 /* 2N+3 
 
 3,5,7 */
-
+/* 
 #dummyPara {
     background-color: hsl(0, 100%, 50%);
+} */
+
+/* #one {
+    background-image: url("bg.jpg");
+    background-repeat: no-repeat;
+    height: 100vh;
+     background-color: rgba(255, 0, 0, 0.5);
+     opacity: 0.5;
+    background-color: aquamarine;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+#two {
+    background-color: bisque;
+    height: 150vh;
+    width: 100vw;
+    margin-left: 50px;
+} */
+/* 
+#one {
+    width: 500px;
+    border: 1px solid aquamarine;
+}
+
+#two {
+    width: 500px;
+    border: 1px solid blanchedalmond;
+    padding: 20px;
+
+} */
+
+p {
+    font-size: 24px;
 }
