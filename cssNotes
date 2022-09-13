@@ -487,16 +487,91 @@ helps/alter to calc. width/height of HTML ELEMENTs.
 CSS UNITS :
 
 1. px - pixel - FIXED UNIT (Not recommended/last resort)
-2. em
-3. rem
-4. %
-5. vw
-6. vh
-7. ch
+2. em - size calculation w.r.t parent element
+3. rem - size calculation w.r.t root element (html tag if not implemented it will take from browser default - 16px) eg - font-size, margin, padding
+4. % - width/height 
+5. vw - VIEWPORT WIDTH - 1vw -> 1 portion of viewport width
+6. vh - VIEWPORT Height
+7. ch - characters - blogpost -> where there is a requirement of not having too many
+characters in a single line.
 
 Default/Standard Font size : 16px
 
-1rem -> 16px
+1rem -> 16px(browser default)
 1.2rem -> 1.2 * 16px -> 
 1.5rem -> 1.5 * 16px -> 24px
 1.5rem -> 1.5 * 24px (browser default) -> 
+
+
+--------------------------------
+
+em ->
+size calculation w.r.t parent element
+
+<div>
+    <p>
+
+div -> font-size : 2rem (2 * 16px) -> 32px
+
+p -> font-size: 1.5rem (1.5 * 16px) -> 24px
+p -> font-size: 1.5em (1.5 * 2rem) -> (1.5 * 2 * 16) -> 48px
+
+
+------------------------------------
+
+
+Text/Typography :
+
+1. text-align: center
+2. text-transform: capitalize, uppercase, lowercase
+3. white-space
+4. overflow
+5. text-overflow
+
+FONTS :
+
+1. font-family : A,B,C,D,E where A,B,C,D,E - fonts -> fallbacks -> If A is not available in the OS, go for B, if B is not available, go for C
+2. font-size
+3. font-weight - to make text bold, bolder. It accepts values like  -1oo, 200,300,400,
+500,600
+------------------------------------------------------------
+
+CSS USAGE W.R.T LAYOUT :
+
+display:
+
+1. block
+2. inline
+3. inline-block (NEW!) - mix of inline n block properties
+
+Inline :
+1. Starts on same line
+2. Only occupy space which is required for its content
+
+Block :
+1. Starts from Next line
+2. Its occies all the available width
+
+Inline-block :
+
+1. Its occies all the available width and Starts from Next line (INITIALLY)
+2. If width is given, then, it takes only that much space (JUST LIKE INLINE ELEMENT)
+    and also, it Starts on same line (JUST LIKE INLINE ELEMENT)
+
+
+-------------------------------------------------------
+
+POSITIONs :
+
+1. static (default)
+2. relative - top, bottom, left, right
+3. absolute
+4. fixed
+5. sticky
+
+position:
+
+1. relative 
+and after applying it,,,,used offsets -> top, left, bottom, right
+
+2. absolute

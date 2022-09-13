@@ -2,6 +2,11 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
 /* p.bgColor {
     background-color: yellow;
 }
@@ -216,6 +221,31 @@ Final -> 1,3,5,7 */
 
 } */
 
-p {
-    font-size: 24px;
+/* p {
+    width: 200px;
+    background-color: red;
+    height: 28px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+} */
+/* 
+#one {
+    width: 40%;
+    background-color: red;
+    display: inline-block;
+}
+
+#two {
+    width: 40%;
+    background-color: green;
+    display: inline-block;
+} */
+
+section:nth-child(even) {
+    background-color: aquamarine;
+}
+
+section:nth-child(odd) {
+    background-color: bisque;
 }
