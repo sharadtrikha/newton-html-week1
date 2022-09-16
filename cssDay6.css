@@ -1,0 +1,17 @@
+#demo1 {
+    background-color: red;
+    /* width: 40vw; */
+    border: 5px solid black;
+}
+
+h1 {
+    background-color: yellow;
+    /* width: 10vw; */
+    border: 5px solid black;
+}
+
+#demo2 {
+    background-color: green;
+    /* width: 60vw; */
+    border: 5px solid black;
+}

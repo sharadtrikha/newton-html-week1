@@ -550,11 +550,11 @@ Inline :
 
 Block :
 1. Starts from Next line
-2. Its occies all the available width
+2. Its occupies all the available width
 
 Inline-block :
 
-1. Its occies all the available width and Starts from Next line (INITIALLY)
+1. Its occupies all the available width and Starts from Next line (INITIALLY)
 2. If width is given, then, it takes only that much space (JUST LIKE INLINE ELEMENT)
     and also, it Starts on same line (JUST LIKE INLINE ELEMENT)
 
@@ -575,3 +575,184 @@ position:
 and after applying it,,,,used offsets -> top, left, bottom, right
 
 2. absolute
+
+OFFSET VALUES are Relative to NEAREST POSITIONED PARENT
+
+Observations :
+
+1. It gives up the space allocated to the html element.
+2. It appears to be FLOATING over html page
+
+3. fixed
+
+OFFSET VALUES are Relative to VIEWPORT
+
+Observation :
+
+1. Almost same as position absolute but it STICKS!(fixed) around during scroll.
+
+
+4. sticky (Combination of relative + fixed)
+
+Observation :
+
+1. Initially it appears same as position: relative
+2. Whenever threshold (offset value) is crossed, it starts behaving as position fixed.
+
+Ques: 
+What is the diff. between position fixed n position absolute ?
+
+--> In one, element will not scroll and in one, it will!
+-> In fixed, OFFSET VALUES are Relative to VIEWPORT and 
+In absolute, OFFSET VALUES are Relative to NEAREST POSITIONED PARENT
+
+
+-------------------------------------------------------------
+
+
+FLOATING :
+
+When we say positioned elements(absolute, fixed, sticky), we say
+these elements are floating on top of our html content...
+
+Technical name - STACKING CONTEXT
+
+Bascially, whats happens, when we apply any position, new STACKING
+CONTEXT is formed.
+
+CSS property that helps us play with stacking context ?
+z-index
+
+Element with higher z-index, wins!
+
+Note:
+z-index property only works when element is POSITIONED (any position value other than static)
+
+float & clear 
+
+
+-----------------------------------------------------------------
+
+FLEXBOX :
+
+Layout system.
+One dimensional layout system.
+
+Flexbox :
+
+2 Roles :
+
+1. Flex Container
+Any parent element having property display: flex;
+
+
+2. Flex items
+Direct children of flex container
+
+
+Flexbox :
+
+1. Rows
+2. Columns
+
+By default, flexbox places flex items in a row.
+Above statement is not exactly true ->
+By default, flexbox places flex items on a MAIN-AXIS.
+
+BY default, MAIN-AXIS is ROW (x axis)
+CROSS-AXIS is COLUMN (Y axis)
+
+Observations :
+All flex-items starts behaving differently, ie.
+Block elements do not behave like block!
+
+
+Axis :
+
+1. Main-axis (default: row)
+2. Cross-axis(default: column)
+
+
+both the axis are governed by a property called flex-direction.
+
+
+Main-axis/Cross-axis :
+
+1. Start point - starting point of my main/Cross-axis
+2. End point - starting point of my main/Cross-axis
+
+
+
+
+Properties applicable on Flex container :
+
+1. flex-direction (default: row)
+
+2. justify-content : 
+
+It works on MAIN-AXIS.
+flex-start, flex-end, center, space-between, space-around, space-evenly
+
+3. align-items: (stretch)
+
+It works on CROSS-AXIS.
+flex-start, flex-end, center
+
+4. flex-wrap (default: no-wrap)
+
+flex-wrap: wrap
+
+5. flex-flow (shorthand property) - <flex-direction> <flex-wrap>
+
+6. gap - to have some distance(GAP) between flex items
+
+7. align-content (Mostly used when there is a property applied called 
+    flex-wrap: wrap) . It is used to determine the spacing between line
+
+
+FLEX-ITEMS :
+
+1. order
+2. flex-grow (Default: 0)
+
+flex-grow: 0 -> even if any space is left in the flex-container still do not use it.
+
+
+3. flex-shrink (default: 1)
+flex-shrink: 1 -> if space is getting lesser n lesser on the flex-container, then, please shrink flex-item along with it.
+
+4. flex-basis 
+5. flex (shorthand property) - flex-grow flex-shrink flex-basis
+
+6. align-self
+
+Scenarios :
+
+flex-direction: row (MAIN-AXIS)
+
+And I want to place my flex items in the center horizontally ?
+justify-content: center;
+
+
+And I want to place my flex items in the center vertically ?
+align-items: center;
+
+
+And I want to place my flex items in the end vertically ?
+align-items: flex-end;
+
+
+---------------------------------------------------------------
+
+
+flex-direction: column (MAIN-AXIS)
+
+And I want to place my flex items in the center horizontally ?
+align-items: center;
+
+And I want to place my flex items in the center vertically ?
+justify-content: center;
+
+
+
+----------------------

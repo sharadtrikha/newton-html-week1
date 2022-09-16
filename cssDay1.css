@@ -249,3 +249,12 @@ section:nth-child(even) {
 section:nth-child(odd) {
     background-color: bisque;
 }
+
+div {
+    position: relative;
+}
+
+img {
+    position: fixed;
+    top: 200px;
+}
