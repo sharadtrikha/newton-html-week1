@@ -1,0 +1,17 @@
+body {
+    background-color: aquamarine;
+}
+
+div {
+    background-color: red;
+}
+
+section {
+    background-color: blueviolet;
+}
+
+@media (orientation: landscape) {
+    body {
+        background-color: bisque;
+    }
+}

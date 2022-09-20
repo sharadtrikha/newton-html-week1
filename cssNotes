@@ -756,3 +756,113 @@ justify-content: center;
 
 
 ----------------------
+
+Some useful css properties:
+
+
+text-align: center -> applied on parent ... will be applicable on all childs
+
+max-width -> max. width that should be allowed
+min-width -> min. width that should be allowed
+
+line-height -> unit less value (relative to font-size) ~ 1.5 looks good 
+
+display -> none (in order to hide some html element)
+
+
+------------
+
+RWD (RESPONSIVE WEB DESIGN) :
+
+1. <meta name="viewport" value="width=device-width, intial-scale=1">
+
+
+
+MEDIA Query :
+
+Based on media/device and its condition....change certain css
+
+Syntax :
+
+@media (<CONDITION>) {
+    // css code goes here
+}
+
+CONDITION :
+
+1. max-width -> MAX VALUE or LESS THAN MAX VALUE
+
+-----------------------------
+
+Mobile First Development/Approach :
+
+1. Code your html/css for mobile users first!
+2. Then apply media queries (if required) to scale it for desktop/laptop users.
+3. In your Media-query, condition changes from max-width to min-width.
+
+
+
+Media Query - ORIENTATION :
+
+@media (orientation: landscape) {} -> 
+applicable only when width of viewport  > height of viewport
+
+
+
+----------------------------------------------------
+
+
+GRID LAYOUT :
+
+2 dimensional layout system.
+
+Roles :
+
+1. container
+2. items
+
+
+who is a container ?
+display: grid
+
+who is a item (grid-child/grid-item) ?
+Only those elements who are DIRECT children of CONTAINER
+
+
+Terms :
+
+Columns 
+Rows 
+
+Unit used :
+
+fr (fraction) - 1 fraction of the total available space.
+
+Dotted lines separating these items(grid-items) -> GRID LINES 
+
+I want 3 columns and 2 rows.
+
+Container Properties :
+
+1. display : grid
+2. grid-template-columns (1fr 1fr or repeat(2,1fr))
+3. grid-template-rows
+4. gap (shorthand) -> <ROW_GAP> <COLUMN_GAP>
+5. row-gap
+6. column-gap
+7. justify-items
+8. align-items
+9. place-items
+10. grid-area (SHORTHAND) : <GRID-row-start-line-no.>/<GRID-col-start-line-no.>/<<GRID-row-end-line-no.>>/<GRID-col-end-line-no.>
+
+
+-----------
+
+I want first item to SPAN across 2 or more columns, grid-column-start and grid-column-end
+I want first item to SPAN across 2 or more rows, 
+grid-row-start and grid-row-end
+
+Shorthands property:
+
+grid-row: <GRID-ROW-START>/<GRID-ROW-END>
+grid-column: <GRID-COLUMN-START>/<GRID-COLUMN-END>

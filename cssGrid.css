@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: aqua;
+    width: 50vw;
+    height: 50vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1rem;
+    /* margin: auto; */
+}
+
+.item {
+    background-color: red;
+    width: 3rem;
+    height: 3rem;
+}
+
+.item1 {
+    /* grid-row-start: 1;
+    grid-row-end: 3; */
+    /* grid-row: 1/3; */
+}
