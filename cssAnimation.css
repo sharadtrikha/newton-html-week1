@@ -1,0 +1,74 @@
+/* :root {
+    background-color: blue;
+    --langColor: rgb(255, 0, 0);
+} */
+
+/* div {
+    width: 300px;
+    height: 300px;
+    background-color: red;
+    animation-name: newtionBatch;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    animation-delay: 2s;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+
+@keyframes newtionBatch {
+    0% {
+        background-color: yellow;
+        position: relative;
+        left: 0;
+    }
+
+
+    100% {
+        background-color: greenyellow;
+        position: relative;
+        left: 800px;
+    }
+} */
+/* 
+div {
+    background-color: red;
+    width: 400px;
+    height: 400px;
+    box-shadow: 10px 20px 13px #a89292;
+} */
+
+
+::selection {
+    background-color: aqua;
+}
+
+p {
+    /* background-color: red; */
+    width: 400px;
+    height: 200px;
+}
+
+
+p:empty {
+    background-color: aqua;
+}
+
+input:in-range {
+    border: 2px solid green;
+}
+
+input:out-of-range {
+    border: 2px solid red;
+}
+
+p:lang(en) {
+    background-color: var(--langColor);
+}
+
+p:target {
+    background-color: red;
+}
+
+/* p:only-child {
+    background-color: aqua;
+} */

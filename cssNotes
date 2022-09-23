@@ -766,7 +766,7 @@ max-width -> max. width that should be allowed
 min-width -> min. width that should be allowed
 
 line-height -> unit less value (relative to font-size) ~ 1.5 looks good 
-
+letter-spacing -> to increase/decrease space between letter
 display -> none (in order to hide some html element)
 
 
@@ -866,3 +866,132 @@ Shorthands property:
 
 grid-row: <GRID-ROW-START>/<GRID-ROW-END>
 grid-column: <GRID-COLUMN-START>/<GRID-COLUMN-END>
+
+
+------------------------------------------------------------
+
+Gradients
+Animations
+Pseudo classes/elements
+Css variables
+
+
+--------------------------------
+
+
+
+Animations :
+
+When we change any style - in between transition.
+
+Anything that transitions -> 
+
+0-100 
+
+0...1...10...25...50..75..100
+(Transition started)       (Transition ended)
+
+
+Question -
+
+Initially div is of color red...then when transition starts...make it yellow..
+and when transition is about to end...make it green
+
+animation-name : <IDENTIFIER>
+
+animation-duration -> tells how long animate should contiune (default : 0).
+it takes seconds and milliseconds as input - 2s,3s,1ms,10ms
+
+@keyframes <IDENTIFIER> {
+    from -> stage of transition when animation starts
+    to -> stage of transition when animation ends (about to end)
+}
+
+There is another way of writing code inside @keyframes ->
+
+@keyframes <IDENTIFIER> {
+    0% {}
+    .
+    .
+    30% {}
+    .
+    .
+    50% {}
+    .
+    .
+    100% {}
+}
+
+
+Question :
+I want to start my animate after some time ?
+animation-delay
+
+
+Question:
+I want to start my animation in reverse ?
+animation-direction
+
+Shorthand property:
+animation: name duration timing-function delay iteration-count direction fill-mode;
+
+
+
+-------------------------------------------------------------
+
+
+Gradients :
+
+1. linear-gradient 
+
+Syntax :
+
+linear-gradient(direction, color1,color2,color3......color n);
+
+if direction is not given..it is taken as "to bottom"
+
+eg - 
+
+background-image: linear-gradient(red, green); -> Color transitioning from red to green -> in top to bottom fashion
+
+
+Using angles :
+
+0deg -> to top
+90deg -> to right
+180deg -> to bottom
+
+2. radial-gradient
+3. conic-gradient
+
+
+--------------------------------------------
+
+Shadows :
+
+box-shadow : <Right_portion> <Botton_portion> <degree_of_blur> <degree_of_spread> <color_of_shadow>;
+
+Right_portion -> positive value -> right side of html element
+                -> negative value -> left side of html element
+
+Botton_portion ->-> positive value -> bottom side of html element
+                -> negative value -> top side of html element
+
+
+-----------------------------------------------
+
+
+CSS Variables :
+
+:root {
+    --variable_name: "value";
+}
+
+.class_name {
+    background-color: var(--variable_name, FALLBACK_VALUE);
+}
+
+FALLBACK_VALUE -> optional
+
+----------------------------------------------
+
